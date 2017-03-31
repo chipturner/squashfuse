@@ -5,7 +5,7 @@ AC_CONFIG_HEADERS([config.h])
 AC_CANONICAL_TARGET
 AM_INIT_AUTOMAKE([foreign -Wall subdir-objects])
 AM_SILENT_RULES(yes)
-AM_PROG_AR
+m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 LT_INIT
 
 # Compiler
